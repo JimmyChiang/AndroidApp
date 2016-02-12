@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/sensor_list_param"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffb24e">
+
+        <TextView
+            android:id="@+id/sen_idx"
+            android:text="[0]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_button_material"
+            android:textStyle="bold|italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Sensor Name : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="@dimen/abc_text_size_button_material"
+            android:textStyle="bold|italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="SensorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_sen_name"
+            android:textSize="@dimen/abc_text_size_button_material"
+            android:textStyle="bold|italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:layout_weight="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_vendor"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_vendor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_version"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_type"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_maxRange"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_maxrange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_resolution"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_resolution"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_power"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_power"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_minDelay"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_mindelay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_fifoReservedEventCount"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_fifoReservedEventCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_fifoMaxEventCount"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_fifoMaxEventCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_stringType"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_stringType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_maxDelay"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_maxDelay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_material_dark"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/str_senparam_reportingMode"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_weight="3" />
+        <TextView
+            android:id="@+id/sen_param_reportingMode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="sensor param value"
+            android:textColor="@color/black"
+            android:layout_weight="7" />
+    </LinearLayout>
+</LinearLayout>
